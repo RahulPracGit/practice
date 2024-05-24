@@ -1,0 +1,58 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+let obj=[{
+    name:'pranesh',
+    address:{
+        location:'tpty',
+        area:'KTR'
+    }
+},
+{name:'rahul',
+    address:{
+        location:'mglm',
+        area:'quarters'
+    }
+}]
+let arr1 = obj.map(x=>{
+    return [x.name,[x.address.location,x.address.area]]
+})
+console.log(arr1)
+function abc(){
+    
+let str = 'my name is pranesh';
+  let capitalizedStr = str
+    .split(' ')                    // Split the string into an array of words
+    .map(word =>                   // Map over each word
+      word.charAt(0).toUpperCase() + word.slice(1)  // Capitalize the first letter of each word and concatenate with the rest of the word
+    )
+    .reverse().join(' ');                    // Join the array of words back into a single string
+
+  console.log(capitalizedStr);      // Output the result
+}
+
+abc();
+console.log("Try programiz.pro");
+
+
+//3
+function toTitleCase() { 
+let str = 'my name is p r a n e s h'
+console.log(str.replace(/\b\w/g, l => l.toUpperCase())) ; 
+} 
+toTitleCase()
+
+//4
+let str2 = 'my name is pranesh'
+let reversedstring = ''
+for(let i=str2.length;i>=0;i--){
+    
+   reversedstring += str2[i]
+}
+console.log(reversedstring)
+
+//  5
+redcArr = [1,2,3,4,5]
+const reducedArr = redcArr.reduce((acc,x)=>{
+return acc+x
+},6)
+console.log(reducedArr)
